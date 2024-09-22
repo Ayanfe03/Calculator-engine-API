@@ -6,7 +6,7 @@ const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use('/v1/calculator', calculatorRouter);
+app.use('/api/calculate', calculatorRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on PORT ${PORT}`);
